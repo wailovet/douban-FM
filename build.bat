@@ -1,0 +1,1 @@
+copy /b nw.exe+fm.nw fm.exe

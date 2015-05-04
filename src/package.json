@@ -1,0 +1,12 @@
+{  
+  "name": "nw-main",  
+  "main": "index.html"  ,
+  "window": {
+        "frame": false,
+        "toolbar": false,
+        "width": 560,
+        "height": 280,
+		"resizable":false,
+		"transparent":true
+    }
+}  
