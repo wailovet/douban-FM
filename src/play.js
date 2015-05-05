@@ -1,12 +1,12 @@
-var json;
+	var json;
 	var audio;
 	var gui;
 	
+	localStorage.now_channel = -1;
 	var supperyStorage = new SupperyStorage();
 	var mylike = supperyStorage.get('mylike');
 	
 	$(document).ready(function(){
-			localStorage.now_channel = -1;
             gui = require('nw.gui');
 			audio = document.getElementById('audio');
 			nextMusic();
@@ -26,13 +26,11 @@ var json;
 		if(_mark_c == false){
 			_mark_c = true;
 			$(this).animate({color:'#FFA6A6'});
-			mylike.push(json.song[0]);
-			supperyStorage.set('mylike',mylike);
+			addFavorites(json.song[0]);
 		}else{
 			_mark_c = false;
 			$(this).animate({color:'#000000'});
-			mylike.pop();
-			supperyStorage.set('mylike',mylike);
+			delFavorites(json.song[0]);
 		}
 	});
 	
@@ -53,6 +51,14 @@ var json;
 			if(json.song.length==0){
 				nextMusic();
 				return;
+			}
+			
+			if(isFavorites(json.song[0])){
+				_mark_c = true;
+				$('#mark').animate({color:'#FFA6A6'});
+			}else{
+				_mark_c = false;
+				$('#mark').animate({color:'#000000'});
 			}
 			$("#music-img").css({background:"url('"+json.song[0].picture+"')"});
 			$("#music-artist").text(json.song[0].artist);
