@@ -4,7 +4,7 @@
   "window": {
         "frame": false,
         "toolbar": false,
-        "width": 560,
+        "width": 960,
         "height": 280,
 		"resizable":false,
 		"transparent":true

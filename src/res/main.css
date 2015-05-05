@@ -1,0 +1,210 @@
+@font-face {
+	font-family: 'iconfont';
+    url('./res/iconfont.woff') format('woff'), /* chrome??firefox */
+}
+.iconfont{
+    font-family:"iconfont" !important; 
+    font-size:30px;font-style:normal;
+    -webkit-font-smoothing: antialiased; 
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.iconfont:hover{
+	color: rgb(102,102,102);
+	cursor:pointer;
+}
+*{
+	font-family: "微软雅黑";
+    -webkit-user-select: none;
+}
+.play {
+	background: #ffffff;
+	width: 512px;
+	height: 246px;
+	box-shadow: 0px 0px 13px #D8D8D8;
+	padding: 0px;
+}
+.music-img{
+	width: 246px;
+	height: 246px;
+}
+.music-npause {
+  width: 266px;
+  position: absolute;
+  height: 246px;
+  background: rgba(255,255,255,0.7);
+  top: 8px;
+  left: 254px;
+  z-index: 9999;
+  display:none;
+  font-size: 13px;
+}
+.music-npause:hover{
+	color: rgba(0,0,0,0.7);
+	cursor:pointer;
+}
+.music-artist{
+	position: absolute;
+	top: 18px;
+	left: 272px;
+	font-size: 24px;
+	font-weight: inherit;
+	display: block;
+	white-space:nowrap;
+	width: 246px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+.music-albumtitle{
+	position: absolute;
+	top: 52px;
+	left: 272px;
+	font-size: 13px;
+	font-weight: inherit;
+	display: block;
+	white-space:nowrap;
+	width: 246px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+.music-title{
+	position: absolute;
+	top: 88px;
+	left: 275px;
+	font-size: 13px;
+	font-weight: inherit;
+	color: rgb(51,173,133); 
+	display: block;
+	width: 245px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+.music-public_time{
+	font-size: 11px;
+	font-weight: inherit;
+	display: inline;
+	color: rgb(102,102,102);
+}
+.progressbar,.progressbar-bg{  
+	width: 227px;
+  	height: 2px;
+ 	background: rgb(157,214,192);
+ 	position: absolute;
+ 	top: 124px;
+ 	left: 274px;
+ 	z-index: 8888;
+}
+.progressbar-bg{
+ 	background: rgb(229,229,232);
+}
+.music-pause {
+	position: absolute;
+	top: 8px;
+	left: 480px;
+	width: 10px;
+	height: 10px;
+	padding:8px;
+	background: rgb(157,214,192);
+}
+.music-pause:hover{
+	cursor:pointer;
+	background: rgba(157,214,192,0.8);
+}
+.music-time{
+	position: absolute;
+	top: 130px;
+	left: 467px;
+	color: #888888;
+	font-size: 11px;
+}
+
+
+
+.channels-main{  
+	background: #ffffff;
+	width: 256px;
+	height: 246px;
+	box-shadow: 0px 0px 13px #D8D8D8;
+	padding: 0px;
+	position: absolute;
+	top: 8px;
+	overflow:hidden;
+	left: 542px;
+}
+.channel-list{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.channel-selected{
+    font-size: 13px;    
+	width: 220px;    
+	height: 38px;  
+	
+    line-height: 18px;    
+	color: #333;    
+    margin-bottom: 18px;    
+	position: relative;    
+	cursor: pointer;    
+}
+.channel{
+    font-size: 13px;    
+	width: 220px;    
+	height: 38px;  
+	line-height: 38px;    
+	color: #333;    
+    margin-bottom: 18px;    
+	position: relative;    
+	cursor: pointer;    
+}
+.channel .chl-name{   
+	width: 99px;  
+	text-indent: 24px;
+	transition: background .2s linear;
+	background: rgba(198,211,205,0.5);
+	overflow: hidden;
+	text-overflow: ellipsis;
+    padding-right: 107px;;
+    padding-left: 24px;
+	white-space: nowrap;   
+    display: block;
+}
+.channel .chl-name:hover{
+	background: rgba(198,211,205,0.9);
+}
+.channel-selected .chl-name{
+    background-color: #9dd6c5;  
+    width: 99px;  
+	overflow: hidden;   
+    height: 16px;   
+	text-overflow: ellipsis;  
+	white-space: nowrap;
+    padding: 10px;
+    padding-right: 107px;;
+    padding-left: 24px;
+    display: block;
+}
+.st-playing{
+	visibility: visible;
+	background: url(./ic_play_current.gif) no-repeat;
+	width: 11px;
+	height: 11px;
+	display: inline-block;
+	position: absolute;
+	top: 13px;
+	right: 21px;
+}
+
