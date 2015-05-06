@@ -16,6 +16,13 @@
 *{
 	font-family: "微软雅黑";
     -webkit-user-select: none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+body{
+	margin: 8px; 
 }
 .play {
 	background: #ffffff;
